@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Top 10 Customers</title>
+</head>
+<body>
+	<h1>Top 10 Customers</h1>
+	<table>
+		<thead>
+			<tr>
+				<th>Customer Name</th>
+				<th>Total Order Value</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for row in rows %}
+			<tr>
+				<td>{{ row[0] }}</td>
+				<td>{{ row[1] }}</td>
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+</body>
+</html>
